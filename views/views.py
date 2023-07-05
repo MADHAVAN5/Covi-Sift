@@ -1,7 +1,13 @@
-from flask import make_response,Flask, flash, redirect, render_template, request, url_for, session
+from flask import (Flask, flash, make_response, redirect, render_template,
+                   request, session, url_for)
+
 from app import *
 
 
 @app.route('/')
 def home():
     return render_template('index.html')
+
+@app.route('/precautions')
+def precautions():
+    return render_template('precautions.html')

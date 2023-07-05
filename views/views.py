@@ -11,3 +11,7 @@ def home():
 @app.route('/precautions')
 def precautions():
     return render_template('precautions.html')
+
+@app.route('/upload', methods=['GET'])
+def UploadGet():
+    return render_template('upload.html')

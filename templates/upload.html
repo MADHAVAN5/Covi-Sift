@@ -60,7 +60,11 @@
                 
             </div>
             <br><br>
-           
+            {% if result  %}
+                    <div>
+                        <p style="text-align: center; color:white">Person Diagnoised with : {{ result }}</p>
+                    </div>
+                {% endif %}
         </form>
         
 
